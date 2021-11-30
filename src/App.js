@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Character from "./components/Character";
+import Picker from "./components/Picker";
 
 function App() {
+  const [head, setHead] = useState("Gelfling");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main>
+        <header className="App-header">
+          <h1>Dark Crystal Body Swap</h1>
+          <Picker head={head} onHeadChange={setHead} />
+          <Character head={head} />
+        </header>
+      </main>
     </div>
   );
 }
