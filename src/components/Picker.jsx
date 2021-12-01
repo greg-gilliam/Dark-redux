@@ -38,7 +38,7 @@ export default function Picker({
         </select>
       </label>
       <label>
-        Accesorize!
+        Accessorize!
         <select
           value={accessory}
           onChange={(e) => onAccessoryChange(e.target.value)}

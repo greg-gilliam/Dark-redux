@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the Picker component 1`] = `
+<div>
+  <div>
+    <label>
+      Head
+      <select>
+        <option>
+          Aughra
+        </option>
+        <option>
+          Gelfling
+        </option>
+        <option>
+          Skeksi
+        </option>
+        <option>
+          urRu
+        </option>
+      </select>
+    </label>
+    <label>
+      Body
+      <select>
+        <option>
+          Aughra
+        </option>
+        <option>
+          Gelfling
+        </option>
+        <option>
+          Skeksi
+        </option>
+        <option>
+          urRu
+        </option>
+      </select>
+    </label>
+    <label>
+      Accessorize!
+      <select>
+        <option>
+          Shard
+        </option>
+        <option>
+          Sword
+        </option>
+        <option>
+          Fizzgig
+        </option>
+      </select>
+    </label>
+    <label>
+      Add a catchphrase:
+      <input
+        type="text"
+        value=""
+      />
+    </label>
+    <button
+      type="button"
+    >
+      Add catchphrase to your list!
+    </button>
+  </div>
+</div>
+`;
