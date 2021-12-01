@@ -3,10 +3,10 @@ export default function Character({ head }) {
     <section style={{ display: "flex", flexDirection: "column" }}>
       <article
         className="head"
-        stle={{
+        style={{
           backgroundImage: `url(./${head}-head.png)`,
-          height: 100,
-          width: 100,
+          height: 150,
+          width: 150,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
