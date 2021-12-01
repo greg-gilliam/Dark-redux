@@ -1,6 +1,12 @@
 import React from "react";
 
-export default function Picker({ head, onHeadChange }) {
+export default function Picker({
+  head,
+  onHeadChange,
+  newCatchphrase,
+  setCatchphrase,
+  handleClick,
+}) {
   // const [head, setHead] = useState("Gelfling");
 
   const headPics = ["Aughra", "Gelfling", "Skeksi", "urRu"];
@@ -15,6 +21,17 @@ export default function Picker({ head, onHeadChange }) {
           ))}
         </select>
       </label>
+      <label>
+        Add a catchphrase:
+        <input
+          type="text"
+          value={newCatchphrase}
+          onChange={(e) => setCatchphrase(e.target.value)}
+        />
+      </label>
+      <button type="button" onClick={handleClick}>
+        Add catchphrase to your list!
+      </button>
     </div>
   );
 }
