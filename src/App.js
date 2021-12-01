@@ -8,6 +8,8 @@ function App() {
   const [head, setHead] = useState("Gelfling");
   const [newCatchphrase, setNewCatchphrase] = useState("");
   const [catchphrases, setCatchphrases] = useState([]);
+  const [body, setBody] = useState("Gelfling");
+  const [accessory, setAccessory] = useState("Shard");
 
   const handleClick = () => {
     setCatchphrases((prevState) => [...prevState, newCatchphrase]);
@@ -24,9 +26,13 @@ function App() {
             newCatchphrase={newCatchphrase}
             setCatchphrase={setNewCatchphrase}
             handleClick={handleClick}
+            body={body}
+            onBodyChange={setBody}
+            accessory={accessory}
+            onAccessoryChange={setAccessory}
           />
           <Display catchphrases={catchphrases} />
-          <Character head={head} />
+          <Character head={head} body={body} accessory={accessory} />
         </header>
       </main>
     </div>
